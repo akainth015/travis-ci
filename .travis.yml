@@ -3,3 +3,9 @@ language: python
 script:
   - python3 -m tests
 
+deploy:
+  provider: script
+  script: python3 -m app
+  on:
+    branch: main
+
